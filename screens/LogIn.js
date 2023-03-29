@@ -1,19 +1,38 @@
 import React from "react";
 import styled from "styled-components/native";
 
-const Container = styled.View``;
-const Text = styled.Text``;
-const Btn = styled.TouchableOpacity``;
-const BtnText = styled.Text``;
+const Container = styled.View`
+  flex: 1;
+  background-color: blanchedalmond;
+`;
+const TextBox = styled.View`
+  margin-top: 50;
+  align-items: center;
+  justify-content: center;
+`;
+const Text = styled.Text`
+  font-size: 18px;
+  color: black;
+`;
+const Btn = styled.TouchableOpacity`
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-top: 10px;
+  background-color: burlywood;
+`;
+const BtnText = styled.Text`
+  color: white;
+  font-size: 18px;
+`;
 const LogIn = ({ navigation: { navigate } }) => {
   return (
     <Container>
-      <Text>
-        Don't have an account?
+      <TextBox>
+        <Text>Don't have an account?</Text>
         <Btn onPress={() => navigate("Join")}>
           <BtnText>Join</BtnText>
         </Btn>
-      </Text>
+      </TextBox>
     </Container>
   );
 };

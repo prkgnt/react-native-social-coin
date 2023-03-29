@@ -7,7 +7,9 @@ const Nav = createNativeStackNavigator();
 
 const OutNav = () => {
   return (
-    <Nav.Navigator>
+    <Nav.Navigator
+      screenOptions={{ headerStyle: { backgroundColor: "bisque" } }}
+    >
       <Nav.Screen name="LogIn" component={LogIn} />
       <Nav.Screen name="Join" component={Join} />
     </Nav.Navigator>
