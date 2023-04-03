@@ -6,7 +6,7 @@ const Container = styled.View`
   background-color: blanchedalmond;
 `;
 const TextBox = styled.View`
-  margin-top: 50;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
 `;
